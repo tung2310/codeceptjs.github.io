@@ -37,10 +37,12 @@ exports.config = {
   name: 'Codecept',
   plugins: {
     stepByStepReport: {
-      enabled: false
+      enabled: false,
+      screenshotsForAllureReport: false
     },
     allure: {
-      enabled: true
+      enabled: false,
+      require: '@codeceptjs/allure-legacy'
     }
   }
 }

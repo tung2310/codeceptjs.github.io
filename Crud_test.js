@@ -42,7 +42,8 @@ Scenario('2. Test add', async  ({ I }) => {
     // 5. Click button Save
     I.click("button[type='submit']");
 
-    I.wait(10);
+    I.wait(2);
+    I.saveScreenshot("testAdd.png", true);
 });
 
 Scenario('3. Update admin', async ({I}) => {
@@ -77,7 +78,8 @@ Scenario('3. Update admin', async ({I}) => {
 
     // 6. Click button Save
     I.click("button[type=submit]");
-    I.wait(10);
+    I.wait(2);
+    I.saveScreenshot("testUpdate.png", true);
 });
 
 Scenario("4. Delete admin", async ({I}) => {
@@ -106,5 +108,6 @@ Scenario("4. Delete admin", async ({I}) => {
     I.wait(3);
     I.click("button.oxd-button--label-danger");
 
-    I.wait(5);
+    I.wait(2);
+    I.saveScreenshot("testDelete.png", true);
 });
